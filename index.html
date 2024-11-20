@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizMaster</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +14,8 @@
     </nav>
 
     <div id="home" class="page active">
-        <div class="Content">
+        <div class="content">
             <h1>Welcome to QuizMaster</h1>
-            <!-- <p>Pick your level</p> -->
             <form id="difficulty-form">
                 <label for="difficulty">Select Difficulty Level:</label>
                 <select id="difficulty" name="difficulty" required>
@@ -30,25 +28,13 @@
 
             <div id="quiz-container" class="hidden">
                 <h2 id="question"></h2>
-                <div id="answers">
-
-
-
-                </div>
                 <form id="answer-form">
-                    <!-- <label for="difficulty">Select Difficulty Level:</label> -->
-                    <select id="answer1" name="answer1" required>
-                        <option value="easy" id="=answer1"></option>
-
+                    <select id="answer" name="answer" required>
+                        <!-- Options will be dynamically added here -->
                     </select>
-
                 </form>
-
-
-
                 <button id="submit-answer" class="hidden">Submit Answer</button>
                 <p id="result"></p>
-                <p>Question <span id="current-question">0</span> of <span id="total-questions">0</span></p>
             </div>
 
             <div id="score-container">
@@ -67,6 +53,10 @@
         </div>
     </div>
 
+    <!-- Footer for the signature -->
+    <footer>
+        <p>&#169;Designed and developed by 刘美丽.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

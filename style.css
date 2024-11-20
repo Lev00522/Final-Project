@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #C89E44;
 
 }
@@ -14,27 +16,6 @@ nav .logo {
     font-size: larger;
 }
 
-/* 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-} */
-
-/* nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-nav ul li a.active {
-    text-decoration: underline;
-} */
 
 .Content {
     background: #C89E44;
@@ -97,17 +78,9 @@ button:hover {
     display: none;
 }
 
-/* Colorful styles for different pages */
-/* #home {
-    background-color: #FFEB3B;
-} */
-/* 
-#about {
-    background-color: #FF9800;
-    color: white;
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    color: #777;
 }
-
-#contact {
-    background-color: #03A9F4;
-    color: white;
-} */
