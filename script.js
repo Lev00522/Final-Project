@@ -11,14 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const incorrectCountElement = document.getElementById('incorrect-count');
     const resetScoreButton = document.getElementById('reset-score');
     // const finalScoreContainer = document.getElementById('final-score-container');
-    // const finalCorrectCountElement = document.getElementById('final-correct-count');
+
     // const finalIncorrectCountElement = document.getElementById('final-incorrect-count');
     const restartQuizButton = document.getElementById('restart-quiz');
     const currentQuestionElement = document.getElementById('current-question');
     const totalQuestionsElement = document.getElementById('total-questions');
     const navLinks = document.querySelectorAll('nav a');
-    const pages = document.querySelectorAll('.page');
-    const contactForm = document.getElementById('contact-form');
+
 
     let questions = [];
     let currentQuestionIndex = 0;
