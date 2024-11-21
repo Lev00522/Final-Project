@@ -6,31 +6,6 @@ body {
 
 }
 
-nav {
-    background: #C89E44;
-    color: white;
-    padding: 3em;
-}
-
-nav .logo {
-    font-size: larger;
-}
-
-
-.Content {
-    background: #C89E44;
-    margin: 11%
-}
-
-
-
-h1 {
-    color: white
-}
-
-form {
-    margin-top: 1em;
-}
 
 select, input, textarea, button {
     display: block;
@@ -38,12 +13,6 @@ select, input, textarea, button {
     margin-bottom: 1em;
 }
 
-label {
-    display: block;
-    width: 100%;
-    color: white;
-    margin-bottom: 1em;
-}
 
 input, textarea, select {
     padding: 0.5em;
@@ -64,15 +33,6 @@ button:hover {
     background-color: #45a049;
 }
 
-.page {
-    display: none;
-    color: whitesmoke
-}
-
-.page.active {
-    display: contents;
-    background: #C89E44;
-}
 
 .hidden {
     display: none;
