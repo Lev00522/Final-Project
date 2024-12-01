@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-h1, h2 {
+h1, h2, #logo-text {
     margin: 0;
     font-weight: 500;
     text-align: center;
@@ -24,6 +24,15 @@ h1 {
 h2 {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+#logo-text {
+    font-family: 'Quicksand', sans-serif; /* Ensure the same font for consistency */
+    font-size: 38px; /* Consistent with the main header size */
+    font-weight: 500; /* Consistent font weight */
+    color: #ff6f61; /* Soft coral red color for the logo text */
+    text-align: center; /* Center-aligned */
+    margin-bottom: 20px; /* Space below the logo */
 }
 
 select, input, textarea, button {
