@@ -3,7 +3,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #C89E44;
-
+    margin: 0;
+    padding: 0;
 }
 
 select, input, textarea, button {
@@ -11,7 +12,6 @@ select, input, textarea, button {
     width: 100%;
     margin-bottom: 1em;
 }
-
 
 input, textarea, select {
     padding: 0.5em;
@@ -32,7 +32,6 @@ button:hover {
     background-color: #45a049;
 }
 
-
 .hidden {
     display: none;
 }
@@ -42,5 +41,38 @@ footer {
     font-size: 24px;
     margin-top: 50px;
     color: white;
+}
 
+label {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;  /* Align checkbox and text in a row */
+    margin-bottom: 15px;  /* Add spacing between options */
+    padding-left: 0;      /* Remove left padding to align with the edge */
+    margin-left: 0;       /* Remove left margin to make sure it starts from the left */
+}
+
+label input {
+    margin-right: 10px;  /* Space between checkbox and option text */
+    width: 20px;          /* Set checkbox size */
+    height: 20px;         /* Set checkbox size */
+}
+
+#quiz-container {
+    margin-top: 50px;
+}
+
+#score-container {
+    margin-top: 20px;
+    color: white;
+}
+
+#final-score-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#answer-form {
+    margin-top: 20px;  /* Space out answer options */
+    padding-left: 0;   /* Ensure form starts from the left */
 }
