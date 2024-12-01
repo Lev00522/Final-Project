@@ -1,35 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #C89E44;
+    font-family: 'Quicksand', sans-serif; /* Soft, rounded font for a cute feel */
+    background-color: #fef6f2; /* Soft pastel cream background for warmth */
     margin: 0;
     padding: 0;
+    color: #000000; /* Set all text color to black */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+    color: #ff6f61; /* Soft coral red for headings 'QuizMaster' and 'Welcome to QuizMaster' */
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 select, input, textarea, button {
     display: block;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 input, textarea, select {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 1em;
+    border: 2px solid #f7b7a3; /* Light peach color border */
+    border-radius: 12px; /* Rounded corners */
+    background-color: #fff; /* White background for inputs */
+    color: #000000; /* Text color set to black */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #ff9aa2; /* Soft pink border when focused */
+    box-shadow: 0 0 8px rgba(255, 154, 162, 0.4); /* Subtle pink glow */
+    outline: none;
 }
 
 button {
-    background-color: #3e553f;
-    color: white;
+    background-color: #ffb7b2; /* Soft pinkish-red button */
+    color: #000000; /* Text color in button set to black */
     border: none;
-    padding: 0.5em 1em;
-    border-radius: 4px;
+    padding: 14px 28px;
+    border-radius: 50px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #f98c8a; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slight scale effect */
+    box-shadow: 0 0 10px rgba(249, 140, 138, 0.4); /* Cute pink shadow effect */
+}
+
+button:active {
+    transform: scale(1); /* Return to normal size when clicked */
+    box-shadow: none;
 }
 
 .hidden {
@@ -38,41 +78,119 @@ button:hover {
 
 footer {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 50px;
-    color: white;
+    color: #ff6f61; /* Soft coral red color for footer */
+}
+
+footer p {
+    margin: 0;
 }
 
 label {
-    font-size: 1.1em;
+    font-size: 1.2em;
     display: flex;
-    align-items: center;  /* Align checkbox and text in a row */
-    margin-bottom: 15px;  /* Add spacing between options */
-    padding-left: 0;      /* Remove left padding to align with the edge */
-    margin-left: 0;       /* Remove left margin to make sure it starts from the left */
+    align-items: center;
+    margin-bottom: 20px;
+    color: #000000; /* Label text color set to black */
 }
 
 label input {
-    margin-right: 10px;  /* Space between checkbox and option text */
-    width: 20px;          /* Set checkbox size */
-    height: 20px;         /* Set checkbox size */
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+label input:checked {
+    transform: scale(1.2); /* Slightly larger checkbox when selected */
 }
 
 #quiz-container {
     margin-top: 50px;
+    text-align: center;
 }
 
 #score-container {
-    margin-top: 20px;
-    color: white;
+    margin-top: 30px;
+    color: #000000; /* Set text color to black */
+    font-size: 18px;
 }
 
 #final-score-container {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 
 #answer-form {
-    margin-top: 20px;  /* Space out answer options */
-    padding-left: 0;   /* Ensure form starts from the left */
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+select#difficulty {
+    margin-top: 20px;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#home h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ff6f61; /* Color for 'QuizMaster' */
+}
+
+#quiz-container h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #ff6f61; /* Color for 'Welcome to QuizMaster' */
+}
+
+#final-score-container button {
+    padding: 14px 28px;
+    background-color: #ff6f61; /* Coral red background for the button */
+    color: #000000; /* Text color set to black */
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#final-score-container button:hover {
+    background-color: #f98c8a; /* Darker coral red on hover */
+    transform: scale(1.05); /* Slight scale effect on button hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.1em;
+    }
 }
